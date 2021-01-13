@@ -6,7 +6,7 @@
 
     <groupId>groupId</groupId>
 
-    <artifactId>testMavenConf</artifactId>
+    <artifactId>fooproject</artifactId>
 
     <version>1.0-SNAPSHOT</version>
 
