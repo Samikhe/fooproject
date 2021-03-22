@@ -12,7 +12,7 @@ pipeline {
       }
      post {
       always {
-        junit '**/TEST*.xml'
+        junit 'target/surefire-reports/TEST*.xml'
       }
      }
   }
@@ -22,7 +22,7 @@ pipeline {
       }
       post {
         always {
-          junit '**/*xml'
+          junit 'newman/*xml'
         }
       }
     }
