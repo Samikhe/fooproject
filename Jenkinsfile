@@ -16,7 +16,7 @@ pipeline {
       }
      }
   }
-            stage('newman') {
+          stage('newman') {
             steps {
                 sh 'newman run Restful Booker.postman_collection.json --environment Restful Booker Vg.postman_environment.json --reporters junit'
             }
@@ -28,3 +28,4 @@ pipeline {
         }
  }
 }
+
