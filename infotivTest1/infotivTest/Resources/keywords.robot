@@ -22,8 +22,8 @@ Given That user is logged in
     Click Button                id:login
 
 When a user books a car
-        Input Text                           id:start  03-03
-        Input Text                           id:end  03-04
+        Input Text                           id:start  04-03
+        Input Text                           id:end  04-04
         Click Button                         id:continue
         Wait until page Contains             What would you like to drive?
         Wait until page Contains Element     id:bookQ7pass5
@@ -52,8 +52,8 @@ Then a car should be booked for the user
     Wait Until Page Contains                My bookings
     Table Should Contain                    class:orderTable        Audi
     Table Should Contain                    class:orderTable        Q7
-    Table Should Contain                    class:orderTable        2021-03-03
-    Table Should Contain                    class:orderTable        2021-03-04
+    Table Should Contain                    class:orderTable        2021-04-03
+    Table Should Contain                    class:orderTable        2021-04-04
     Click Button                            id:unBook1
     Alert Should Be Present
     Wait Until Page Contains                has been Returned
