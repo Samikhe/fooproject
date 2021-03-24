@@ -13,6 +13,11 @@ pipeline {
      post {
       always {
         junit 'target/surefire-reports/TEST*.xml'
+        post {
+        always {
+            step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
+        }
+}
       }
      }
   }
